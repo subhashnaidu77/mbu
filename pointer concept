@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+int x = 10 , y = 20;
+int *p, *q , **temp;
+printf("%d\n",x);
+//y;
+// printf("%d\n",&x);
+// printf("%d\n",&y);
+printf("%d\n",&temp);
+p=&x;
+printf("%u\n",p);
+q=&y;
+printf("%u\n",q);
+q=p;
+printf("%u\n",q);
+printf("%u\n",*q);
+temp = &p;
+printf("%u\n",temp);//address p
+printf("%d\n",*temp);// prints  the addres of x
+printf("%d",**temp);
+
+
+
+
+
+
+
+    return 0;
+}
