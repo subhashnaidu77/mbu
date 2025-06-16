@@ -1,0 +1,10 @@
+2. Finding Merge Point of Two Singly Linked Lists
+Problem:
+Given two singly linked lists that merge at some node, find the node where they merge.
+ Real-Time Example:
+•	Railway tracks merging at a point.
+•	Tracking version histories in Git — two branches may merge at a commit.
+ Approach:
+1.	Find lengths of both lists.
+2.	Move the pointer of longer list by the difference in lengths.
+3.	Traverse both lists together until a common node is found.
