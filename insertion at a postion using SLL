@@ -1,0 +1,19 @@
+    public void insertAtPosition(int value, int pos) {
+        Node newNode = new Node(value);
+        if (pos == 1) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node temp = head;
+        for (int i = 1; i < pos - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+        if (temp == null) {
+            System.out.println("Invalid Position");
+            return;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
