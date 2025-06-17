@@ -1,0 +1,31 @@
+Traver sal flow chart of cll:
+start - > check if(head ==null)-> yes (empty nlist )-> no 
+
+when its no -> temp =head ;  ->  do{ tempdata  and temp = temp.next} ->  whie temp!=head) -->  end ;
+
+
+// Insertio  at beginning 
+
+1. create a new node 
+list empty or not 
+3. if its not empty -> traverse till last node 
+4 . update last node to point to the new node 
+5 update the new node to the old  
+
+
+
+
+public {
+ node creation 
+if(head==null){ empty list }
+Node temp = head;
+while(temp.next!=head){
+temp = temp.next;
+newNode.next = head ;
+temp.next = newnode ; 
+head = newnode;
+}
+}
+
+
+
